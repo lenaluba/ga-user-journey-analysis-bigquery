@@ -1,5 +1,5 @@
 -- ============================================================================
--- GA4 DATA PREPROCESSING (Adapted for User Journey Analysis)
+-- GA DATA PREPROCESSING (Adapted for User Journey Analysis)
 -- ============================================================================
 -- Source: bigquery-public-data.google_analytics_sample.ga_sessions_*
 -- Purpose: Transform raw GA data into a structure compatible with journey analysis
@@ -222,7 +222,4 @@ WHERE hits.type IN ('PAGE', 'TRANSACTION')
 
 -- Optional: Filter to specific date range
 AND date BETWEEN '20170101' AND '20170108'
-
-ORDER BY RAND()
-LIMIT 10
 ;

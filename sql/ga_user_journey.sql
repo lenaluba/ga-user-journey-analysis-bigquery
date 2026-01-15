@@ -36,7 +36,8 @@ WITH PREPROCESSED_DATA AS (
       ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
     ) AS traffic_campaign_first
 
-  FROM `temp-481115.ga_user_journey_analysis_case.ga_preprocessed` 
+  FROM `{{PROJECT_ID}}.{{DATASET_ID}}.ga_preprocessed`
+
 )
 
 -- ============================================================================
