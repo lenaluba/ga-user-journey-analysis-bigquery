@@ -91,7 +91,7 @@ WITH STEP1 AS (
         ) AS entry_page_traffic_medium
 
     FROM 
-        `temp-481115.ga_user_journey_analysis_case.ga_preprocessed`
+        `{{PROJECT_ID}}.{{DATASET_ID}}.ga_preprocessed`
     
     -- Remove consecutive refreshes (same URL as previous event)
     QUALIFY
